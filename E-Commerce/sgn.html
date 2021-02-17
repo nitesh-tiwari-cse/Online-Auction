@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		 function lgn()
+			 {
+			 	window.alert("You are signed up!");
+			 }
+
+	  function a(){
+
+			 var x=document.getElementById('pswd').value;
+			 var y=x.length;
+			 
+			  
+			 
+
+			 
+			 if ( y<8) 
+			 {
+			 	var z=document.getElementById("demo").innerHTML="Password must be greater than or equal to 8 charachters."
+			 	document.getElementById("demo").style.color="red";
+			 	document.getElementById("demo").style.fontFamily="Bell MT";
+
+			 }
+
+			 else{
+			 	var q=document.getElementById("demo").innerHTML="You entered strong password."
+			 	document.getElementById("demo").style.color="green";
+			 	document.getElementById("demo").style.fontFamily="Bell MT";
+			 }
+		}
+			 function b(){
+			 	 var x=document.getElementById('pswd').value;
+			 	 var m=document.getElementById('psw').value;
+			 	 if (x==m) {
+			 	 	document.getElementById("dem").innerHTML="&#x2714;"+"Password";
+			 	 	document.getElementById("dem").style.color="green";
+			 	 	document.getElementById("dem").style.fontFamily="Bell MT";
+			 	 }
+			 	 else{
+			 	 	document.getElementById("dem").innerHTML=" Please Re-enter Correct Password!";
+			 	 	document.getElementById("dem").style.color="red";
+			 	 	document.getElementById("dem").style.fontFamily="Bell MT";
+
+			 	 }
+
+
+			 }
+			
+		
+		
+	</script>
+ <style >
+   #fir{
+   	     height: 198px;
+   	      background-color:#b642f4;
+   	      border-radius: 10px;
+
+
+
+   	     
+   }
+   h1{
+   	color: white;
+   	text-align: center;
+   	top: 50%;
+   	left: 50%;
+   	transform: translate(-50%,-50%);
+   	/*margin-top: 40px;*/
+   	position: relative;
+   }
+    #sec{
+    	margin-top: 300px;
+    	  height: 400px;
+   	     background-color:#b642f4;
+   	     border-radius: 10px;
+   }
+ 	form{
+ 	  position: absolute;
+ 	  top: 50%;
+ 	  left: 50%;
+ 	  width: 350px;
+ 	  margin-top: 200px;
+ 	  transform: translate(-50%,-50%);
+ 	  border:2px solid gray;
+ 	  text-align: center;
+ 	  padding: 8px 10px;
+ 	  border-radius: 10px;
+ 	  box-shadow:0 0 25px rgba(0,0,0,0.6);
+ 	  background-color: white;
+ 	}
+ 	.txt{
+ 		 border-bottom: 2px solid black;
+ 		border-left-style: none;
+ 		border-right-style: none;
+ 		border-top-style: none;
+ 		padding: 8px 10px;
+ 		width: 75%;
+ 		margin-top: 20px;
+ 		font-size: 16px;
+ 		font-family:Bell MT;
+
+
+ 	}
+ 	
+ 	 .txt:hover{
+
+ 		 border-bottom: 2px solid #d742f4;
+
+ 	}
+ 	input[type=submit]{
+ 		width: 75%;
+ 		border-radius: 10px;
+ 		margin-top: 20px;
+ 		font-size: 25px;
+ 		color: white;
+ 		background-color: #ad42f4;
+ 		
+ 	}
+ 	input[type=submit]:hover{
+ 		 
+ 		opacity: .59;
+
+
+ 	}
+ 	input[style=number]{
+ 		 text-decoration-style: none;
+ 	}
+
+ 	
+    .spn{
+    	padding: 0px 20px;
+    	margin-top: 20px;
+    	float: left;
+    	font-family: 
+ 		 
+ 	}
+ </style>
+	 
+</head>
+<body>
+	<div id="fir">
+		<h1>Sign Up </h1>
+		
+	</div>
+	<div id="sec">
+		
+	</div>
+	 <form>
+	 	<span class="spn">Full Name</span>
+	 	<br>
+	 	<input type="text" name="" class="txt">
+	 	<br>
+	 	<span class="spn">Email</span>
+	 	<br>
+	 	<input type="email" name="" class="txt">
+	 	<br>
+	 	<span class="spn">Mobile Number</span>
+	 	<br>
+	 	<input type="number" name="" class="txt" >
+	 	<br>
+	 	<span class="spn" >Password</span>
+	 	<br>
+	 	<input type="password" name="" class="txt" id="pswd" onchange="a()">
+	 	<br>
+	 	<p id="demo"></p>
+	 	<span class="spn">Re-Enter Password</span>
+	 	<br>
+	 	<input type="password" name="" class="txt" id="psw" onchange="b()">
+	 	<br>
+	 	<p id="dem"></p>
+	 	<input type="submit" name="Sign Up" value="Sign Up" onclick="lgn()" >
+	 </form>
+
+</body>
+</html>
