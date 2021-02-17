@@ -26,7 +26,7 @@ A web portal which helps customers to buy product just by clicking from anywhere
 ![](screenshots/pic8.png)
 ![](screenshots/pic9.png)
  ### Make Payment
-![](screenshots/pic10.PNG)
+![](screenshots/pic10.png)
 ### Contact From 
 ![](screenshots/pic11.png)
  
